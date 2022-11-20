@@ -49,7 +49,7 @@ public class CaptureBitmapView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
         canvas.drawColor(Color.WHITE);
-        //canvas.drawColor(Color.argb(255, 237, 239, 250));
+
         canvas.drawBitmap(_Bitmap, 0, 0, _BitmapPaint);
         canvas.drawPath(_Path, _paint);
     }
