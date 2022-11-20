@@ -106,7 +106,7 @@ public class CaptureBitmapView extends View {
     public byte[] getBytes() {
         Bitmap b = getBitmap();
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        b.compress(Bitmap.CompressFormat.PNG, 10, baos);
+        b.compress(Bitmap.CompressFormat.PNG, 100, baos);
         return baos.toByteArray();
     }
     public Bitmap getBitmap() {
